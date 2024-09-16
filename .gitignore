@@ -1,0 +1,7 @@
+/venv
+db.sqlite3
+/OnlineShop/settings.py
+/OnlineShop/__pycache__
+manage.py
+/shops/__pycache__
+/shops/migrations
