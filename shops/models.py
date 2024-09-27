@@ -32,7 +32,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     picture = models.ImageField(upload_to="upload/product/")
 
-    colors = (("B", "black"), ("W", "white"), ("G", "Gray"), ("R", "red"))
+    colors = (("B", "black"), ("W", "white"), ("G", "Gray"), ("R", "red"),('BR', 'Brown'))
     color = models.CharField(max_length=50, choices=colors, default="black")
 
     def __str__(self):
