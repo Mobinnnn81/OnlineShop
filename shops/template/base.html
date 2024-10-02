@@ -19,7 +19,15 @@
 
 <body dir="rtl">
     {% include 'navbar.html' %}
-
+    
+    {% if messages %}
+        {% for message in messages %}
+            <div style="background-color: orange;color: black;box-shadow: 0 1px 1px 2px; opacity: 0.7;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+             </div>
+        {% endfor %}
+    {% endif %}
 
     {% block content  %}
 
